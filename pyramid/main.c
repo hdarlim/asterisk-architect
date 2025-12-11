@@ -13,10 +13,15 @@ int main() {
         scanf("%d", &n);
     }
     
-    // n = 3
-    //   *
-    //  ***
-    // *****
+    for (int i = 0; i < n; i++) {
+	    for (int j = 0; j < n - 1 - i; j++) {
+            printf("%c", space);
+	    }
+	    for (int k = 0; k < (2 * i) + 1; k++) {
+	        printf("%c", symbol);
+	    }
+	    printf("\n");
+    }
 
     return 0;
 }
